@@ -7,9 +7,6 @@ CREATE TABLE User (
     DateJoined DATE
 );
 
-
-for patient :- 
-
 CREATE TABLE Patient (
     PatientID INT PRIMARY KEY AUTO_INCREMENT,
     Name VARCHAR(100) NOT NULL,
