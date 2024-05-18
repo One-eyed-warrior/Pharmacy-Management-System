@@ -19,8 +19,6 @@ CREATE TABLE Patient (
     FOREIGN KEY (PrescriptionID) REFERENCES Prescription(PrescriptionID)
 );
 
-for Doctor:- 
-
 CREATE TABLE Doctor (
     DoctorID INT PRIMARY KEY AUTO_INCREMENT,
     Name VARCHAR(100) NOT NULL,
@@ -28,8 +26,6 @@ CREATE TABLE Doctor (
     ContactNumber VARCHAR(20),
     Email VARCHAR(100)
 );
-
-for prescription :- 
 
 CREATE TABLE Prescription (
     PrescriptionID INT PRIMARY KEY AUTO_INCREMENT,
@@ -39,8 +35,6 @@ CREATE TABLE Prescription (
     FOREIGN KEY (PatientID) REFERENCES Patient(PatientID),
     FOREIGN KEY (DoctorID) REFERENCES Doctor(DoctorID)
 );
-
-for medicine:- 
 
 CREATE TABLE Medicine (
     MedicineID INT PRIMARY KEY AUTO_INCREMENT,
@@ -52,9 +46,6 @@ CREATE TABLE Medicine (
     ExpiryDate DATE
 );
 
-
-for inventory :- 
-
 CREATE TABLE Inventory (
     InventoryID INT PRIMARY KEY AUTO_INCREMENT,
     MedicineID INT,
@@ -62,8 +53,6 @@ CREATE TABLE Inventory (
     ExpiryDate DATE,
     FOREIGN KEY (MedicineID) REFERENCES Medicine(MedicineID)
 );
-
-for sale:- 
 
 CREATE TABLE Sale (
     SaleID INT PRIMARY KEY AUTO_INCREMENT,
@@ -76,8 +65,6 @@ CREATE TABLE Sale (
     FOREIGN KEY (MedicineID) REFERENCES Medicine(MedicineID)
 );
 
-for supplier : -
-
 CREATE TABLE Supplier (
     SupplierID INT PRIMARY KEY AUTO_INCREMENT,
     Name VARCHAR(100) NOT NULL,
@@ -86,7 +73,6 @@ CREATE TABLE Supplier (
     Address VARCHAR(255)
 );
 
-for purchase :- 
 
 CREATE TABLE Purchase (
     PurchaseID INT PRIMARY KEY AUTO_INCREMENT,
@@ -98,8 +84,6 @@ CREATE TABLE Purchase (
     FOREIGN KEY (SupplierID) REFERENCES Supplier(SupplierID),
     FOREIGN KEY (MedicineID) REFERENCES Medicine(MedicineID)
 );
-
-for emplyoee :- 
 
 CREATE TABLE Employee (
     EmployeeID INT PRIMARY KEY AUTO_INCREMENT,
@@ -113,8 +97,6 @@ CREATE TABLE Employee (
     DateJoined DATE
 );
 
-for employee scedule :- 
-
 CREATE TABLE EmployeeSchedule (
     ScheduleID INT PRIMARY KEY AUTO_INCREMENT,
     EmployeeID INT,
@@ -123,8 +105,6 @@ CREATE TABLE EmployeeSchedule (
     EndTime TIME,
     FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID)
 );
-
-for transaction log :- 
 
 CREATE TABLE TransactionLog (
     LogID INT PRIMARY KEY AUTO_INCREMENT,
