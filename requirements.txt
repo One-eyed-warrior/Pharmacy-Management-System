@@ -1,0 +1,9 @@
+# requirements.txt
+
+# Core dependencies
+mysql-connector-python  # For MySQL database interaction
+tk                       # For Tkinter GUI (usually included with Python)
+
+# For development or testing tools
+# pylint                   # For code linting
+# pytest                   # For testing
