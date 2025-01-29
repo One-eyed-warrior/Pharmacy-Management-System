@@ -10,13 +10,8 @@ This project implements a Pharmacy Management System as part of the coursework f
 - [Overview](#overview)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Dependencies](#dependencies)
-- [Screenshots](#screenshots) (Optional)
-- [Future Enhancements](#future-enhancements)
-- [Team](#team)
-- [License](#license)
+
 
 ## Overview
 
@@ -51,7 +46,11 @@ The system is designed to be efficient, reliable, and secure, ensuring accurate 
 4. Run the Application:
    ```bash
    python Frontend_code.py
-  
+
+## Dependencies
+Python 3.x
+Tkinter
+mysql.connector
 
 
 ![Relational](https://github.com/One-eyed-warrior/Pharmacy-Management-System/assets/75874625/61546879-8530-42f0-a95d-5a255b3c8d9e)
