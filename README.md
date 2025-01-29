@@ -11,6 +11,7 @@ This project implements a Pharmacy Management System as part of the coursework f
 - [Features](#features)
 - [Installation](#installation)
 - [Dependencies](#dependencies)
+- [Relaionship-Diagram](#Entity-Relationship-Diagram)
 
 
 ## Overview
@@ -52,5 +53,5 @@ Python 3.x
 Tkinter
 mysql.connector
 
-
+## Entity Relationship Diagram
 ![Relational](https://github.com/One-eyed-warrior/Pharmacy-Management-System/assets/75874625/61546879-8530-42f0-a95d-5a255b3c8d9e)
