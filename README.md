@@ -1,6 +1,3 @@
-# Pharmacy-Management-System
-Implementation of a Pharmacy Management System for 21CSC205P DBMS Coursework Using Python Tkinter module and MySQL Backend
-
 # Pharmacy Management System
 
 This project implements a Pharmacy Management System as part of the coursework for 21CSC205P Database Management Systems. It utilizes Python with the Tkinter module for the graphical user interface (GUI) and MySQL for the backend database.
